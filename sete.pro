@@ -14,6 +14,9 @@ SOURCES += \
     setedisplay.cpp
 
 HEADERS += \
+    MindVision/CameraApi.h \
+    MindVision/CameraDefine.h \
+    MindVision/CameraStatus.h \
     setecamera.h \
     setedisplay.h
 
@@ -23,3 +26,5 @@ FORMS +=
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+LIBS += -lMVSDK
