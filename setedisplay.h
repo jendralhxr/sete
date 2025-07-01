@@ -3,6 +3,9 @@
 
 #include <QObject>
 #include <QWidget>
+#include <QOpenGLWidget>
+#include <QGraphicsScene>
+#include <QGraphicsPixmapItem>
 
 class SeteDisplay : public QWidget
 {
@@ -11,6 +14,12 @@ public:
     explicit SeteDisplay(QWidget *parent = nullptr);
 
 signals:
+
+private:
+    QGraphicsScene *m_scene;
+    QGraphicsPixmapItem *m_image_item;
+
+
 };
 
 #endif // SETEDISPLAY_H

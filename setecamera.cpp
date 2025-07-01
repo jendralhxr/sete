@@ -18,5 +18,11 @@ int SeteCamera::setExposure(){
 
 }
 
+int SeteCamera::setTrigger(){
+
+}
+
 void SeteCamera::run(){
 }
+
+
